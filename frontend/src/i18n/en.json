@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "dashboard": "Dashboard", "products": "Products", "stock": "Stock",
+    "sales": "Sales", "analytics": "Analytics", "reports": "Reports",
+    "suppliers": "Suppliers", "notifications": "Notifications",
+    "auditLogs": "Audit Logs", "users": "Users", "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Dashboard", "welcome": "Welcome to Aadish Traders",
+    "todayRevenue": "Today's Revenue", "todayProfit": "Today's Profit",
+    "todaySales": "Today's Sales", "monthRevenue": "Month Revenue",
+    "totalProducts": "Total Products", "lowStock": "Low Stock",
+    "expiringSoon": "Expiring Soon", "outOfStock": "Out of Stock",
+    "inventoryValue": "Inventory Value", "recentSales": "Recent Sales"
+  },
+  "products": {
+    "title": "Products", "addProduct": "Add Product", "editProduct": "Edit Product",
+    "name": "Product Name", "category": "Category", "sku": "SKU", "barcode": "Barcode",
+    "unit": "Unit", "costPrice": "Cost Price", "sellingPrice": "Selling Price",
+    "quantity": "Quantity", "lowStockThreshold": "Low Stock Threshold",
+    "supplier": "Supplier", "expiryDate": "Expiry Date", "batchNo": "Batch No",
+    "gstRate": "GST Rate", "description": "Description", "save": "Save Product",
+    "delete": "Delete", "edit": "Edit", "bulkImport": "Bulk Import",
+    "noProducts": "No products found"
+  },
+  "stock": {
+    "title": "Stock Management", "stockIn": "Stock In", "stockOut": "Stock Out",
+    "transactions": "Transactions", "selectProduct": "Select Product",
+    "quantity": "Quantity", "reason": "Reason", "notes": "Notes",
+    "submit": "Submit", "type": "Type", "date": "Date"
+  },
+  "sales": {
+    "title": "Sales", "newSale": "New Sale", "invoice": "Invoice No",
+    "customer": "Customer", "items": "Items", "total": "Total",
+    "profit": "Profit", "payment": "Payment Mode", "date": "Date",
+    "addItem": "Add Item", "removeSale": "Remove"
+  },
+  "analytics": { "title": "Analytics", "trends": "Sales Trends", "topProducts": "Top Products",
+    "slowMoving": "Slow Moving", "categoryBreakdown": "Category Breakdown",
+    "restock": "Restock Suggestions"
+  },
+  "reports": { "title": "Reports & Export", "exportProducts": "Export Products",
+    "exportSales": "Export Sales", "exportTransactions": "Export Transactions",
+    "download": "Download", "format": "Format", "dateRange": "Date Range"
+  },
+  "common": {
+    "search": "Search...", "filter": "Filter", "save": "Save", "cancel": "Cancel",
+    "delete": "Delete", "edit": "Edit", "view": "View", "loading": "Loading...",
+    "noData": "No data found", "confirm": "Confirm", "close": "Close",
+    "actions": "Actions", "status": "Status", "active": "Active", "inactive": "Inactive",
+    "all": "All", "from": "From", "to": "To", "export": "Export", "import": "Import",
+    "refresh": "Refresh", "back": "Back", "next": "Next", "previous": "Previous"
+  },
+  "categories": {
+    "grains": "Grains", "pulses": "Pulses", "oils": "Oils", "spices": "Spices",
+    "dairy": "Dairy", "beverages": "Beverages", "packaged": "Packaged",
+    "flour": "Flour", "sugar_salt": "Sugar & Salt", "other": "Other"
+  },
+  "units": {
+    "kg": "Kilogram (kg)", "grams": "Grams", "liters": "Liters", "ml": "Milliliters",
+    "packets": "Packets", "pieces": "Pieces", "bags": "Bags", "quintals": "Quintals",
+    "boxes": "Boxes", "dozens": "Dozens"
+  },
+  "settings": { "title": "Settings", "language": "Language", "theme": "Theme",
+    "businessName": "Business Name", "save": "Save Settings"
+  }
+}

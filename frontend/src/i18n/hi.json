@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "dashboard": "डैशबोर्ड", "products": "उत्पाद", "stock": "स्टॉक",
+    "sales": "बिक्री", "analytics": "विश्लेषण", "reports": "रिपोर्ट",
+    "suppliers": "आपूर्तिकर्ता", "notifications": "सूचनाएं",
+    "auditLogs": "ऑडिट लॉग", "users": "उपयोगकर्ता", "settings": "सेटिंग्स"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड", "welcome": "आदिश ट्रेडर्स में आपका स्वागत है",
+    "todayRevenue": "आज की आय", "todayProfit": "आज का लाभ",
+    "todaySales": "आज की बिक्री", "monthRevenue": "मासिक आय",
+    "totalProducts": "कुल उत्पाद", "lowStock": "कम स्टॉक",
+    "expiringSoon": "जल्द समाप्त", "outOfStock": "स्टॉक खत्म",
+    "inventoryValue": "इन्वेंटरी मूल्य", "recentSales": "हाल की बिक्री"
+  },
+  "products": {
+    "title": "उत्पाद", "addProduct": "उत्पाद जोड़ें", "editProduct": "उत्पाद संपादित करें",
+    "name": "उत्पाद का नाम", "category": "श्रेणी", "sku": "SKU", "barcode": "बारकोड",
+    "unit": "इकाई", "costPrice": "लागत मूल्य", "sellingPrice": "बिक्री मूल्य",
+    "quantity": "मात्रा", "lowStockThreshold": "कम स्टॉक सीमा",
+    "supplier": "आपूर्तिकर्ता", "expiryDate": "समाप्ति तिथि", "batchNo": "बैच नंबर",
+    "gstRate": "GST दर", "description": "विवरण", "save": "उत्पाद सहेजें",
+    "delete": "हटाएं", "edit": "संपादित करें", "bulkImport": "बल्क आयात",
+    "noProducts": "कोई उत्पाद नहीं मिला"
+  },
+  "stock": {
+    "title": "स्टॉक प्रबंधन", "stockIn": "स्टॉक इन", "stockOut": "स्टॉक आउट",
+    "transactions": "लेनदेन", "selectProduct": "उत्पाद चुनें",
+    "quantity": "मात्रा", "reason": "कारण", "notes": "नोट्स",
+    "submit": "जमा करें", "type": "प्रकार", "date": "तारीख"
+  },
+  "sales": {
+    "title": "बिक्री", "newSale": "नई बिक्री", "invoice": "चालान नंबर",
+    "customer": "ग्राहक", "items": "वस्तुएं", "total": "कुल",
+    "profit": "लाभ", "payment": "भुगतान मोड", "date": "तारीख",
+    "addItem": "वस्तु जोड़ें", "removeSale": "हटाएं"
+  },
+  "analytics": { "title": "विश्लेषण", "trends": "बिक्री रुझान", "topProducts": "शीर्ष उत्पाद",
+    "slowMoving": "धीमी चलने वाली वस्तुएं", "categoryBreakdown": "श्रेणी विश्लेषण",
+    "restock": "पुनःभंडारण सुझाव"
+  },
+  "reports": { "title": "रिपोर्ट और निर्यात", "exportProducts": "उत्पाद निर्यात करें",
+    "exportSales": "बिक्री निर्यात करें", "exportTransactions": "लेनदेन निर्यात करें",
+    "download": "डाउनलोड", "format": "प्रारूप", "dateRange": "तिथि सीमा"
+  },
+  "common": {
+    "search": "खोजें...", "filter": "फ़िल्टर", "save": "सहेजें", "cancel": "रद्द करें",
+    "delete": "हटाएं", "edit": "संपादित करें", "view": "देखें", "loading": "लोड हो रहा है...",
+    "noData": "कोई डेटा नहीं मिला", "confirm": "पुष्टि करें", "close": "बंद करें",
+    "actions": "क्रियाएं", "status": "स्थिति", "active": "सक्रिय", "inactive": "निष्क्रिय",
+    "all": "सभी", "from": "से", "to": "तक", "export": "निर्यात", "import": "आयात",
+    "refresh": "रीफ्रेश", "back": "वापस", "next": "अगला", "previous": "पिछला"
+  },
+  "categories": {
+    "grains": "अनाज", "pulses": "दालें", "oils": "तेल", "spices": "मसाले",
+    "dairy": "डेयरी", "beverages": "पेय पदार्थ", "packaged": "पैकेज्ड",
+    "flour": "आटा", "sugar_salt": "चीनी और नमक", "other": "अन्य"
+  },
+  "settings": { "title": "सेटिंग्स", "language": "भाषा", "theme": "थीम",
+    "businessName": "व्यापार का नाम", "save": "सेटिंग्स सहेजें"
+  }
+}

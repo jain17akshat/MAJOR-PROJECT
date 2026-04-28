@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "dashboard": "डॅशबोर्ड", "products": "उत्पादने", "stock": "साठा",
+    "sales": "विक्री", "analytics": "विश्लेषण", "reports": "अहवाल",
+    "suppliers": "पुरवठादार", "notifications": "सूचना",
+    "auditLogs": "ऑडिट लॉग", "users": "वापरकर्ते", "settings": "सेटिंग्ज"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड", "welcome": "आदिश ट्रेडर्समध्ये आपले स्वागत आहे",
+    "todayRevenue": "आजचे उत्पन्न", "todayProfit": "आजचा नफा",
+    "todaySales": "आजची विक्री", "monthRevenue": "मासिक उत्पन्न",
+    "totalProducts": "एकूण उत्पादने", "lowStock": "कमी साठा",
+    "expiringSoon": "लवकर कालबाह्य", "outOfStock": "साठा संपला",
+    "inventoryValue": "इन्व्हेंटरी मूल्य", "recentSales": "अलीकडील विक्री"
+  },
+  "products": {
+    "title": "उत्पादने", "addProduct": "उत्पादन जोडा", "editProduct": "उत्पादन संपादित करा",
+    "name": "उत्पादनाचे नाव", "category": "श्रेणी", "sku": "SKU", "barcode": "बारकोड",
+    "unit": "एकक", "costPrice": "किंमत", "sellingPrice": "विक्री किंमत",
+    "quantity": "प्रमाण", "lowStockThreshold": "कमी साठ्याची मर्यादा",
+    "supplier": "पुरवठादार", "expiryDate": "कालबाह्यता तारीख", "batchNo": "बॅच नंबर",
+    "gstRate": "GST दर", "description": "वर्णन", "save": "उत्पादन जतन करा",
+    "delete": "हटवा", "edit": "संपादित करा", "bulkImport": "बल्क आयात",
+    "noProducts": "कोणतेही उत्पादन आढळले नाही"
+  },
+  "stock": {
+    "title": "साठा व्यवस्थापन", "stockIn": "साठा जोडा", "stockOut": "साठा काढा",
+    "transactions": "व्यवहार", "selectProduct": "उत्पादन निवडा",
+    "quantity": "प्रमाण", "reason": "कारण", "notes": "नोट्स",
+    "submit": "सादर करा", "type": "प्रकार", "date": "तारीख"
+  },
+  "sales": {
+    "title": "विक्री", "newSale": "नवीन विक्री", "invoice": "चलन क्रमांक",
+    "customer": "ग्राहक", "items": "वस्तू", "total": "एकूण",
+    "profit": "नफा", "payment": "पेमेंट मोड", "date": "तारीख",
+    "addItem": "वस्तू जोडा", "removeSale": "हटवा"
+  },
+  "analytics": { "title": "विश्लेषण", "trends": "विक्री ट्रेंड", "topProducts": "शीर्ष उत्पादने",
+    "slowMoving": "हळू चालणारी उत्पादने", "categoryBreakdown": "श्रेणी विश्लेषण",
+    "restock": "पुनर्भरण सूचना"
+  },
+  "reports": { "title": "अहवाल आणि निर्यात", "exportProducts": "उत्पादने निर्यात करा",
+    "exportSales": "विक्री निर्यात करा", "exportTransactions": "व्यवहार निर्यात करा",
+    "download": "डाउनलोड", "format": "स्वरूप", "dateRange": "तारीख श्रेणी"
+  },
+  "common": {
+    "search": "शोधा...", "filter": "फिल्टर", "save": "जतन करा", "cancel": "रद्द करा",
+    "delete": "हटवा", "edit": "संपादित करा", "view": "पहा", "loading": "लोड होत आहे...",
+    "noData": "डेटा आढळला नाही", "confirm": "पुष्टी करा", "close": "बंद करा",
+    "actions": "क्रिया", "status": "स्थिती", "active": "सक्रिय", "inactive": "निष्क्रिय",
+    "all": "सर्व", "from": "पासून", "to": "पर्यंत", "export": "निर्यात", "import": "आयात",
+    "refresh": "रिफ्रेश", "back": "मागे", "next": "पुढे", "previous": "मागील"
+  },
+  "categories": {
+    "grains": "धान्य", "pulses": "डाळी", "oils": "तेल", "spices": "मसाले",
+    "dairy": "दुग्धजन्य", "beverages": "पेये", "packaged": "पॅकेज्ड",
+    "flour": "पीठ", "sugar_salt": "साखर आणि मीठ", "other": "इतर"
+  },
+  "settings": { "title": "सेटिंग्ज", "language": "भाषा", "theme": "थीम",
+    "businessName": "व्यवसायाचे नाव", "save": "सेटिंग्ज जतन करा"
+  }
+}
