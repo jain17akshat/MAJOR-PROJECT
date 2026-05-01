@@ -71,7 +71,7 @@ export default function Users() {
                   <tr key={u._id}>
                     <td>
                       <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-                        <div style={{ width:34, height:34, borderRadius:'50%', background:'linear-gradient(135deg,var(--teal),var(--purple))', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:700, fontSize:13, color:'#0a0f1e', flexShrink:0 }}>
+                        <div style={{ width:34, height:34, borderRadius:'50%', background:'linear-gradient(135deg,var(--teal),var(--purple))', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:700, fontSize:13, color:'var(--btn-primary-text)', flexShrink:0 }}>
                           {u.name.charAt(0).toUpperCase()}
                         </div>
                         <span style={{ fontWeight:600 }}>{u.name}</span>

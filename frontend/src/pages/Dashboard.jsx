@@ -5,6 +5,7 @@ import { getDashboard, getTrends, getTopProducts, getCategoryBreakdown } from '.
 import { getSales } from '../api/salesApi';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 import { format } from 'date-fns';
+import useThemeStore from '../stores/themeStore';
 
 const COLORS = ['#00d4a8', '#6366f1', '#ff7b54', '#f59e0b', '#ec4899', '#10b981', '#3b82f6', '#8b5cf6'];
 
@@ -39,6 +40,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 
 export default function Dashboard() {
   const { t } = useTranslation();
+  const { theme } = useThemeStore();
   const [kpis, setKpis] = useState(null);
   const [trends, setTrends] = useState([]);
   const [topProducts, setTopProducts] = useState([]);
@@ -97,9 +99,9 @@ export default function Dashboard() {
           <div className="chart-subtitle">Daily revenue vs profit</div>
           <ResponsiveContainer width="100%" height={220}>
             <LineChart data={trends}>
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
-              <XAxis dataKey="date" tick={{ fill: '#64748b', fontSize: 11 }} tickFormatter={d => d.slice(5)} />
-              <YAxis tick={{ fill: '#64748b', fontSize: 11 }} tickFormatter={v => `₹${(v/1000).toFixed(0)}k`} />
+              <CartesianGrid strokeDasharray="3 3" stroke={theme === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.06)'} />
+              <XAxis dataKey="date" tick={{ fill: theme === 'dark' ? '#64748b' : '#94a3b8', fontSize: 11 }} tickFormatter={d => d.slice(5)} />
+              <YAxis tick={{ fill: theme === 'dark' ? '#64748b' : '#94a3b8', fontSize: 11 }} tickFormatter={v => `₹${(v/1000).toFixed(0)}k`} />
               <Tooltip content={<CustomTooltip />} />
               <Legend wrapperStyle={{ fontSize: 12 }} />
               <Line type="monotone" dataKey="revenue" name="Revenue" stroke="#00d4a8" strokeWidth={2.5} dot={false} />
@@ -129,9 +131,9 @@ export default function Dashboard() {
           <div className="chart-subtitle">By revenue generated</div>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={topProducts} layout="vertical">
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
-              <XAxis type="number" tick={{ fill: '#64748b', fontSize: 11 }} tickFormatter={v => `₹${(v/1000).toFixed(0)}k`} />
-              <YAxis type="category" dataKey="productName" tick={{ fill: '#94a3b8', fontSize: 11 }} width={130} />
+              <CartesianGrid strokeDasharray="3 3" stroke={theme === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.06)'} />
+              <XAxis type="number" tick={{ fill: theme === 'dark' ? '#64748b' : '#94a3b8', fontSize: 11 }} tickFormatter={v => `₹${(v/1000).toFixed(0)}k`} />
+              <YAxis type="category" dataKey="productName" tick={{ fill: theme === 'dark' ? '#94a3b8' : '#64748b', fontSize: 11 }} width={130} />
               <Tooltip content={<CustomTooltip />} />
               <Bar dataKey="totalRevenue" name="Revenue" fill="#00d4a8" radius={[0, 6, 6, 0]} />
             </BarChart>

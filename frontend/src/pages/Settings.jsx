@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Save, Globe, Info } from 'lucide-react';
+import { Save, Globe, Info, Sun, Moon, Monitor } from 'lucide-react';
 import toast from 'react-hot-toast';
+import useThemeStore from '../stores/themeStore';
 
 const LANGS = [
   { code:'en', label:'English', flag:'🇬🇧' },
@@ -9,9 +10,15 @@ const LANGS = [
   { code:'mr', label:'मराठी (Marathi)', flag:'🪔' },
 ];
 
+const THEMES = [
+  { value: 'dark', label: 'Dark Mode', desc: 'Easy on the eyes', icon: Moon, bg: 'rgba(99,102,241,0.12)', color: '#6366f1' },
+  { value: 'light', label: 'Light Mode', desc: 'Classic bright look', icon: Sun, bg: 'rgba(245,158,11,0.12)', color: '#f59e0b' },
+];
+
 export default function Settings() {
   const { t, i18n } = useTranslation();
   const [lang, setLang] = useState(i18n.language);
+  const { theme, setTheme } = useThemeStore();
 
   const handleSave = () => {
     i18n.changeLanguage(lang);
@@ -22,6 +29,35 @@ export default function Settings() {
     <div style={{ maxWidth: 700 }}>
       <div className="page-header">
         <div><h2>{t('settings.title')}</h2><p style={{ color:'var(--text-muted)' }}>Configure your IMS preferences</p></div>
+      </div>
+
+      {/* Appearance / Theme */}
+      <div className="card" style={{ marginBottom:16 }}>
+        <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:20 }}>
+          <Sun size={18} color="var(--teal)"/>
+          <span style={{ fontWeight:700, fontSize:15 }}>Appearance</span>
+        </div>
+        <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+          {THEMES.map(t => {
+            const Icon = t.icon;
+            return (
+              <button
+                key={t.value}
+                className={`theme-option ${theme === t.value ? 'selected' : ''}`}
+                onClick={() => setTheme(t.value)}
+              >
+                <div className="theme-option-icon" style={{ background: t.bg, color: t.color }}>
+                  <Icon size={22} />
+                </div>
+                <div style={{ flex:1 }}>
+                  <div style={{ fontWeight: 600, fontSize: 14 }}>{t.label}</div>
+                  <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 2 }}>{t.desc}</div>
+                </div>
+                {theme === t.value && <span className="badge badge-teal">Active</span>}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Language */}

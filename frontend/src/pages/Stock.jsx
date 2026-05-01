@@ -135,7 +135,7 @@ export default function Stock() {
           {loading ? <div className="loading-center"><div className="spinner" /></div> : (
             <div>
               {txns.map(tx => (
-                <div key={tx._id} style={{ padding: '12px 20px', borderBottom: '1px solid rgba(255,255,255,0.04)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div key={tx._id} style={{ padding: '12px 20px', borderBottom: '1px solid var(--table-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div>
                     <div style={{ fontWeight: 600, fontSize: 13 }}>{tx.product?.name || 'Unknown'}</div>
                     <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>{tx.reason || '—'} · {format(new Date(tx.createdAt), 'dd MMM, hh:mm a')}</div>
