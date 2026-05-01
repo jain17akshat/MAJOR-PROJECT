@@ -1,7 +1,8 @@
-import { Bell, RefreshCw, Globe } from 'lucide-react';
+import { Bell, RefreshCw, Globe, Sun, Moon } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import useThemeStore from '../../stores/themeStore';
 
 const PAGE_TITLES = {
   '/': 'Dashboard', '/products': 'Products', '/products/add': 'Add Product',
@@ -21,6 +22,7 @@ export default function Topbar({ onRefresh }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [showLang, setShowLang] = useState(false);
+  const { theme, toggleTheme } = useThemeStore();
 
   const title = PAGE_TITLES[location.pathname] || 'Aadish Traders';
   const now = new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
@@ -37,6 +39,20 @@ export default function Topbar({ onRefresh }) {
             <RefreshCw size={16} />
           </button>
         )}
+
+        {/* Theme Toggle */}
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+          id="theme-toggle-btn"
+        >
+          {theme === 'dark' ? (
+            <Sun size={18} className="icon icon-enter" key="sun" />
+          ) : (
+            <Moon size={18} className="icon icon-enter" key="moon" />
+          )}
+        </button>
 
         {/* Language Switcher */}
         <div style={{ position: 'relative' }}>
@@ -73,7 +89,7 @@ export default function Topbar({ onRefresh }) {
           width: 36, height: 36, borderRadius: '50%',
           background: 'linear-gradient(135deg, var(--teal), var(--purple))',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontWeight: 700, fontSize: 14, color: '#0a0f1e', cursor: 'pointer'
+          fontWeight: 700, fontSize: 14, color: 'var(--btn-primary-text)', cursor: 'pointer'
         }}>AT</div>
       </div>
     </header>
